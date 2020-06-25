@@ -133,6 +133,8 @@ class ChartComponent extends React.Component {
     }
 
     const data = this.transformDataProp(this.props);
+    
+    return JSON.parse(JSON.stringify(data))
 
     this.shadowDataProp = {
       ...data,
